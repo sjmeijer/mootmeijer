@@ -42,7 +42,7 @@ var Typer={
 		Typer.accessCount=0; //reset count
 		var ddiv=$("<div id='gran'>").html(""); // create new blank div and id "gran"
 		ddiv.addClass("accessGranted"); // add class to the div
-		ddiv.html("<h1>ACCESS GRANTED</h1><h3>If you have questions, call me at 9I6 52I OO32</h3>"); // set content of div
+		ddiv.html("<h1>ACCESS GRANTED</h1><h3>If you have questions, call Sam at 9I6 52I OO32</h3>"); // set content of div
 		$(document.body).prepend(ddiv); // prepend div to body
 		return false;
 	},
