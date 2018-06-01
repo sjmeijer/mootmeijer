@@ -15,7 +15,7 @@ def main():
 	   gifts 	: False, 
 	   hiking_gear	: True,
 	   bathing_suit	: True,
-	   snow_gear	: NaN,
+	   snow_gear	: 0.5*(True + False),
 	   clothes	: 2*night
 	   })
 
