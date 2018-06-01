@@ -26,15 +26,17 @@ def main():
 
     f.attend(wedding.minimum())
 
-    for i,aBeer in brewskis.list():
-        try:
+    try:
+        for i,aBeer in enumerate(brewskis.list()):
             f.imbibe(aBeer.several())
-        except TypeError as e:
-            f.imbibe(whiskey.some())
+        
+    except TypeError as e:
+        friend.log("got through %d beers" % (i*aBeer.several()) )
+        f.imbibe(whiskey.some())
 
-        f.hang_out()
+    f.hang_out()
 
-    f.return("Sunday 14 Oct, 2018)
+    f.return("Sunday 14 Oct, 2018")
 
     exit()
 
