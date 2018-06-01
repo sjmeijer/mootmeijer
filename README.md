@@ -44,13 +44,13 @@ You're looking at it. I decided that such a simple site didn't need any fancy ho
 
 In the google DNS record settings, I added in two types of "custom resource records":
 
-> Name 	Type	TTL	Data
-> @	A	1m	185.199.108.153
-> 			185.199.109.153
-> 			185.199.110.153
-> 			185.199.111.153
-> 	
-> www	CNAME	1m	sjmeijer.github.io.
+| Name | Type | TTL | Data           |
+|------|------|-----|-----------------|
+| @    |  A   | 1m  | 185.199.108.153 |
+|	   |      |     | 185.199.109.153 |
+|      |      |     | 185.199.110.153 |
+|      |      |     | 185.199.111.153 | 	
+| www  |CNAME | 1m  | sjmeijer.github.io.|
 
 I guess the @ name points to the root of my site (mootmeijer.com). The 4x IPs are the github pages name servers. Since I had already told github my repo should point to mootmeijer.com, I guess that works.
 The www CNAME just lets either the apex or www point to the same site
@@ -62,7 +62,7 @@ The CSS is actually translated from SCSS, and compiled in CSS. This can be accom
 1. Installing sass:
 `sudo gem install sass --no-user-install`
 
-2. Tell sass to watch for changes in the SCSS folder and compile it into CSS in the right folder
+2. Tell sass to watch for changes in the SCSS folder and compile it into CSS in the right folder 
 `sass --watch scss:css`
 
 3. Then this makes a css/agency.css file, which still needs to be translated into a minified css/agency.min.css, which I just did using https://cssminifier.com/
