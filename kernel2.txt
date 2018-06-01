@@ -1,0 +1,42 @@
+import whiskey
+import beer as brewskis
+import colorado as Co
+
+from friends import *
+from wedding import mininum
+
+
+def main():
+    f = friends.list_top()
+    
+    f.invite()
+
+    f.bring({
+	   gifts 	: False, 
+	   hiking_gear	: True,
+	   bathing_suit	: True,
+	   snow_gear	: NaN,
+	   clothes	: 2*night
+	   })
+
+    f.arrive("Friday 12 Oct, 2018")
+    f.store(Co.Nederland(),)
+
+    f = f + Co.mountains()
+
+    f.attend(wedding.minimum())
+
+    for i,aBeer in brewskis.list():
+        try:
+            f.imbibe(aBeer.several())
+        except TypeError as e:
+            f.imbibe(whiskey.some())
+
+        f.hang_out()
+
+    f.return("Sunday 14 Oct, 2018)
+
+    exit()
+
+if __name__=="__main__":
+    main()
