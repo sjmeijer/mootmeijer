@@ -65,9 +65,9 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">The Wedding Of</div>
+          <div class="intro-lead-in">More Stuff to Know About</div>
           <div class="intro-heading text-uppercase">Sam &amp; Taylor</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#timeline">Tell Me More</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#location">Tell Me More</a>
         </div>
       </div>
     </header>
@@ -93,10 +93,30 @@
             <p class="text-muted">
               The ceremony will be on Sat 13 October, 2018. We suggest arriving Friday and leaving Sunday. 
               Nederland ("Ned" to the cool kids) is in the mountains, just the other side of Boulder. 
-              For most people, it will be easiest to fly into Denver airport, then take the train to downtown, and the bus to Boulder, or just take the bus straight there from the airport. 
+              For most people, it will be easiest to fly into Denver airport.
               If you're renting a car, directions to Nederland are "easy".
-              As we get a little closer to the actual date, we'll coordinate with local people and people renting cars to try to make it as painless as possible.
             </p>
+            <p class="text-muted">
+              If you want to take public transportation from the airport, there are several good options (with solid schedules even on Sunday) to get to us:
+              <li class="text-muted">
+                There is a <a target="_blank" href="http://www3.rtd-denver.com/schedules/getSchedule.action?routeType=9&routeId=AB">bus straight from the airport to Boulder</a>
+              </li>
+
+              <li class="text-muted">
+                If you want to go to downtown Denver first for something, you can <a target="_blank" href="http://www3.rtd-denver.com/schedules/getSchedule.action?routeType=32&routeId=A">take the A-line train into Denver</a>, and then <a target="_blank" href="http://www3.rtd-denver.com/schedules/getSchedule.action?routeId=FF&branch=FF1">an FF1 bus into Boulder</a> later.
+              </li>
+
+              <li class="text-muted">
+                Once you're in Boulder, <a target="_blank" href="http://www3.rtd-denver.com/schedules/getSchedule.action?routeId=N">there is an N bus that runs straight to Nederland</a>.
+              </li>
+
+            </p>
+
+            <p class="text-muted">
+                As we get a little closer to the actual date, we'll coordinate with local people and people renting cars to try to make it as painless as possible. 
+                Most likely someone can give you a ride from the airport, or pick you up from Denver or Boulder. 
+            </p>
+
           </div>
         </div>
 
@@ -453,8 +473,8 @@
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
+                  <a class="portfolio-link" data-toggle="modal" href="#privacyPolicyModal">Privacy Policy</a>
+                </li>
               <li class="list-inline-item">
                 <a href="https://github.com/sjmeijer/mootmeijer">See my source code!</a>
               </li>
@@ -465,6 +485,35 @@
     </footer>
 
 
+        <!-- Modal 1 -->
+        <div class="portfolio-modal modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                    <div class="rl"></div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2 class="text-uppercase">Privacy Policy</h2>
+                        <p class="item-intro text-muted">What were you actually expecting to find here?</p>
+                        <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt=""> -->
+                        <p>We're pretty sure we don't even have a way to track you here, we didn't even put a google analytics tracker on this bad boy. Sorry if we accidentally took some data, but we promise not to tell anyone else. No doubt that Google, Facebook, and Amazon already know you're here.</p>
+        
+                        <button class="btn btn-primary" data-dismiss="modal" type="button">
+                          <i class="fa fa-times"></i>
+                          Close Project</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
