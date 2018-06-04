@@ -6,7 +6,7 @@ import beer as brewskis
 import colorado as Co
 
 from friends import *
-from wedding import mininum
+from wedding import minimum
 
 
 def main():
@@ -29,6 +29,8 @@ def main():
 
     f.attend(wedding.minimum())
 
+    f.hang_out()
+
     try:
         for i,aBeer in enumerate(brewskis.list()):
             f.imbibe(aBeer.several())
@@ -37,7 +39,9 @@ def main():
         friend.log("got through %d beers" % (i*aBeer.several()) )
         f.imbibe(whiskey.some())
 
-    f.hang_out()
+    finally:
+        f.get("some_sleep")
+
 
     f.return("Sunday 14 Oct, 2018")
 
